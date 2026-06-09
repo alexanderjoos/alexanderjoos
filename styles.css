@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #ffffff;
+  color: #111;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.profile h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.about {
+  margin-bottom: 2.5rem;
+}
+
+.about h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.tile {
+  display: block;
+  padding: 1.25rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s, transform 0.15s;
+}
+
+.tile:hover {
+  border-color: #111;
+  transform: translateY(-2px);
+}
+
+.tile h3 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.tile p {
+  font-size: 0.875rem;
+  color: #666;
+}

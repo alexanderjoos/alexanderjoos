@@ -52,13 +52,21 @@ body {
 }
 
 .tile {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
   padding: 1.25rem;
   border: 1px solid #ddd;
   border-radius: 8px;
   text-decoration: none;
   color: inherit;
   transition: border-color 0.15s, transform 0.15s;
+}
+
+.tile-icon {
+  width: 28px;
+  height: 28px;
 }
 
 .tile:hover {
@@ -73,5 +81,44 @@ body {
 
 .tile p {
   font-size: 0.875rem;
+  color: #666;
+}
+
+.checkout {
+  margin-top: 3rem;
+}
+
+.checkout h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.checkout-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.25rem;
+}
+
+.checkout-item {
+  margin: 0;
+}
+
+.checkout-item img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.checkout-item figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.checkout-item figcaption span {
   color: #666;
 }

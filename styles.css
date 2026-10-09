@@ -93,6 +93,12 @@ body {
   font-weight: 600;
 }
 
+.project h3 a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .project-meta {
   font-size: 0.8rem;
   color: #666;

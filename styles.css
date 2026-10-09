@@ -58,6 +58,56 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.projects {
+  margin-top: 2.5rem;
+}
+
+.projects h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem 1.1rem;
+}
+
+.project-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.25rem 1rem;
+  margin-bottom: 0.35rem;
+}
+
+.project h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.project-meta {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.project p {
+  font-size: 0.925rem;
+}
+
+.project .project-tags {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #666;
+}
+
 .tiles {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

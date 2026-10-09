@@ -38,7 +38,7 @@
     <section class="about">
       <h2>About</h2>
       <p>
-        Hi I'm Alex! I'm a Cornell Master's student studying CS. I'm interested in Data Science, Data Engineering, and SWE. In my free time I like to make pizza, go hiking, and play video/board games. Right now I'm messing around in godot for the first time!
+        Hi I'm Alex! I'm a Cornell CS Master's student graduating in December 2026. I build agentic AI systems and the data infrastructure underneath them, from migration agents and low-latency streaming pipelines at Fidelity to a RAG backend for clinicians at Cornell's AI Innovation Lab. In my free time I like to make pizza, go hiking, and play video/board games. Right now I'm messing around in godot for the first time!
       </p>
     </section>
 
@@ -71,6 +71,52 @@
         </svg>
         <h3>Email</h3>
       </a>
+    </section>
+
+    <section class="projects">
+      <h2>What I've built</h2>
+      <div class="project-list">
+        <article class="project">
+          <div class="project-head">
+            <h3>Agentic COBOL Migration</h3>
+            <span class="project-meta">Fidelity &middot; 2026</span>
+          </div>
+          <p>Python agents that migrate COBOL-era APIs and legacy data into an event-sourced ledger, plus validation agents that check the migrated output against TLA+/TLC specs and Python checks before it can be trusted.</p>
+          <p class="project-tags">Python &middot; Multi-agent &middot; Tool calling &middot; TLA+</p>
+        </article>
+        <article class="project">
+          <div class="project-head">
+            <h3>Low-Latency Brokerage Streaming</h3>
+            <span class="project-meta">Fidelity &middot; 2026</span>
+          </div>
+          <p>A Java Kafka producer over Aeron with async, fault-tolerant delivery, and pipelines streaming a sub-3ms deterministic brokerage platform's state machine output into SingleStore.</p>
+          <p class="project-tags">Java &middot; Kafka &middot; Aeron &middot; SingleStore</p>
+        </article>
+        <article class="project">
+          <div class="project-head">
+            <h3>BME Collaborator Finder</h3>
+            <span class="project-meta">Cornell AI Innovation Lab &middot; Sep 2026 - now</span>
+          </div>
+          <p>The RAG layer for a multi-agent tool that helps clinicians find research collaborators: PDF and PubMed ingestion, S3 storage, and vector search that returns cited faculty matches.</p>
+          <p class="project-tags">RAG &middot; Vector search &middot; AWS S3 &middot; Multi-agent</p>
+        </article>
+        <article class="project">
+          <div class="project-head">
+            <h3>Airflow Anomaly Detection</h3>
+            <span class="project-meta">Project lead, 4-person team &middot; 2026</span>
+          </div>
+          <p>Airflow-native task-runtime anomaly detection with DAG-file config, custom detectors, four built-in algorithms, task-level observability, and CI tests.</p>
+          <p class="project-tags">Python &middot; Apache Airflow &middot; CI/CD</p>
+        </article>
+        <article class="project">
+          <div class="project-head">
+            <h3>LOB-Driven Optimal Execution</h3>
+            <span class="project-meta">Market Microstructure &middot; 2026</span>
+          </div>
+          <p>An execution strategy that beat TWAP on INTC, MSFT, AMZN, GOOG, and held-out AAPL using order-book imbalance, spread, and timing signals on tick-level data.</p>
+          <p class="project-tags">Python &middot; Backtesting &middot; Tick data</p>
+        </article>
+      </div>
     </section>
 
     <section class="checkout">

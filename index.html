@@ -1,23 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
-</head>
-<body>
-  <script>
-    window.onload = function() {
-      Calendly.initBadgeWidget({
-        url: 'https://calendly.com/aaj46-cornell',
-        text: 'Lets Meet!',
-        color: '#2800B8',
-        textColor: '#ffffff'
-      });
-    };
-  </script>
-</body>
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,6 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
   <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css">
 </head>
 <body>
   <main class="container">
@@ -150,5 +133,17 @@
   </main>
 
   <script src="scripts.js"></script>
+  <script>
+    function initCalendlyBadge() {
+      if (!window.Calendly) return;
+      Calendly.initBadgeWidget({
+        url: 'https://calendly.com/aaj46-cornell/30min',
+        text: "Let's Meet!",
+        color: '#2800B8',
+        textColor: '#ffffff'
+      });
+    }
+  </script>
+  <script src="https://assets.calendly.com/assets/external/widget.js" async onload="initCalendlyBadge()"></script>
 </body>
 </html>
